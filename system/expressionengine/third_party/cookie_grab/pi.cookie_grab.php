@@ -43,7 +43,7 @@ class Cookie_grab {
 
 	var $return_data;
 
-	
+
 	/**
 	 * Constructor
 	 *
@@ -58,7 +58,7 @@ class Cookie_grab {
 	}
 
 	// --------------------------------------------------------------------
-	
+
 	/**
 	 * Usage
 	 *
@@ -67,9 +67,9 @@ class Cookie_grab {
 	 * @access	public
 	 * @return	string
 	 */
-	function usage()
+	static function usage()
 	{
-		ob_start(); 
+		ob_start();
 		?>
 		{exp:cookie_grab name="cookie"}
 
@@ -77,12 +77,12 @@ class Cookie_grab {
 
 		<?php
 		$buffer = ob_get_contents();
-	
-		ob_end_clean(); 
+
+		ob_end_clean();
 
 		return $buffer;
 	}
-	
+
 	// --------------------------------------------------------------------
 
 }
